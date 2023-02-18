@@ -26,6 +26,7 @@ export default function About() {
       <h1>Nasi Goreng</h1>
       <h1>Mie Goreng</h1>
       <h1>Sate</h1>
+      <h1>Soto</h1>
       </SkillsBox>
 
       <SkillsBox title="Sosmed">

@@ -1,65 +1,65 @@
-// import React, { Component } from 'react';
-// import Projects from '../comps/project/project';
-// import Link from 'next/link'
+import React, { Component } from 'react';
+import Projects from '../comps/project/project';
+import Link from 'next/link'
 
-// import AK from '../public/svg/ak.svg';
-// // import Tipper from '../public/svg/tipper.svg';
-// import PLPC from '../public/svg/plpc.svg';
-// // import Hal from '../public/svg/hal9000m.svg';
+import AK from '../public/svg/ak.svg';
+// import Tipper from '../public/svg/tipper.svg';
+import PLPC from '../public/svg/plpc.svg';
+// import Hal from '../public/svg/hal9000m.svg';
 
-// // import IP from '../public/svg/ip-tracker.svg';
+// import IP from '../public/svg/ip-tracker.svg';
 
 
-// export default class ProjectData extends Component {
-//   state = {
-//     projects: [
-//       {
-//         title: 'This Site',
-//         logo: <AK style={{ fill: 'white' }} />,
-//         icons: [
-//           <i className="icon-html5" title="HTML5" key="1"></i>,
-//           <i className="icon-sass" title="SCSS" style={{ color: "#CC6699" }} key="2"></i>,
-//           <i className="icon-javascript" title="Javascript" key="3"></i>,
-//           <i className="icon-react" title="React" key="4"></i>,
-//           <i className="icon-next-js" title="Next.js" key="5"></i>,
-//           <i className="icon-node-js" title="Node.js" key="6"></i>
-//         ],
-//         description: 'My portfolio site, showcasing my work and personal projects',
-//         buttons: [
-//           <Link href="https://github.com/AceGK/portfolio" className="btn" target="_blank" rel="noreferrer" key="1">
-//             <i className="icon-github" title="Github"></i> Github
-//           </Link>
-//         ],
-//         id: 1
-//       },
-//       {
-//         title: 'Purple Lotus',
-//         logo: <PLPC />,
-//         icons: [
-//           <i className="icon-html5" title="HTML5" key="1"></i>,
-//           <i className="icon-css3" title="CSS3" key="2"></i>,
-//           <i className="icon-javascript" title="Javascript" key="3"></i>,
-//           <i className="icon-wordpress" title="Wordpress" key="4"></i>,
-//           <i className="icon-php" title="php" key="5"></i>,
-//         ],
-//         description: 'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js',
-//         buttons: [
-//           <Link href="https://plpcsanjose.com" className="btn" target="_blank" rel="noreferrer" key="1">
-//             <i className="icon-link" title="view site"></i> View
-//           </Link>,
-//         ],
-//         id: 2
-//       },
+export default class ProjectData extends Component {
+  state = {
+    projects: [
+      {
+        title: 'Personal Project',
+        icons: [
+            // <i className='personal' key="1"></i>
+        ],
+        description: 'My portfolio site, showcasing my work and personal projects',
+        buttons: [
+          <Link href="https://github.com/FavianIbra/3DCard" className="btn" target="_blank" rel="noreferrer" key="1">
+            <i className="icon-github" title="Github"></i> Github
+          </Link>
+        ],
+    
+      },
+      {
+        title: 'Tefa Project',
+        icons: [
+            // <i className='personal' key="1"></i>
+        ],
+        description: 'My portfolio site, showcasing my team work in class Tefa',
+        buttons: [
+          <Link href="https://github.com/Abyansyah/Duar-portfolio-react" className="btn" target="_blank" rel="noreferrer" key="2">
+            <i className="icon-github" title="Github"></i> Github
+          </Link>
+          ],
+      }, 
+      {
+        title: 'Class Project',
+        icons: [
+            // <i className='personal' key="1"></i>
+        ],
+        description: 'My portfolio site, showcasing my work in XI class',
+        buttons: [
+          <Link href="https://github.com/FavianIbra/laundry" className="btn" target="_blank" rel="noreferrer" key="3">
+            <i className="icon-github" title="Github"></i> Github
+          </Link>
+          ],
+      }, 
       
       
 
-//     ]
-//   }
-//   render() {
-//     return (
-//       <div className="page-container">
-//         <Projects projects={this.state.projects} />
-//       </div>
-//     );
-//   }
-// }
+    ]
+  }
+  render() {
+    return (
+      <div className="page-container">
+        <Projects projects={this.state.projects} />
+      </div>
+    );
+  }
+}
