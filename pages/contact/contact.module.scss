@@ -1,0 +1,48 @@
+.contact {
+    display: grid;
+		grid-template-columns:1fr;
+		gap:10px;
+		input, textarea {
+			display:block;
+			background:transparent;
+			border:1px solid var(--accent1);
+			padding:1em;
+			color:var(--text);
+			-webkit-border-radius:0; 
+    	border-radius:0;
+			font-size: 16px;
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			appearance: textfield;
+			box-sizing: content-box;
+		}
+		textarea {
+			resize: vertical;
+			min-height:75px;
+			max-height:500px;
+		}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover, 
+		input:-webkit-autofill:focus, 
+		input:-webkit-autofill:active {
+			transition: background-color 5000s ease-in-out 0s;
+			-webkit-text-fill-color: var(--text) ;
+			font-family:var(--body-font)!important;
+		}
+		.input::-webkit-search-decoration {
+			-webkit-appearance: none;
+		}
+		input::placeholder,
+		textarea::placeholder {
+			color:var(--text);
+		}
+		input:focus,
+		textarea:focus {
+			outline:none!important;
+			border:1px solid var(--text);
+		}
+}
+
+.success {
+	text-align: center;
+}

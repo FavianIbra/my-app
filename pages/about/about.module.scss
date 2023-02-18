@@ -1,0 +1,110 @@
+@import "styles/mixins";
+
+.about {
+  margin-bottom:15px;
+}
+
+// about page boxes
+.skillsBox {
+  margin-bottom:15px;
+
+  &:not(:last-child) {
+  margin-bottom:35px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+    margin:0px;
+    margin-top:0px;
+    &::before {
+      content: "";
+      flex-basis: 25px;
+      border-top: 1px solid var(--accent1);
+      margin: auto;
+      margin-right: 15px;
+    } 
+    &::after {
+      content: "";
+      flex: 1;
+      border-top: 1px solid var(--accent1);
+      margin: auto;
+      margin-left: 15px;
+    }
+    @include tablet(){
+      font-size:1rem;
+    }
+  }
+
+  > div {
+    border:1px solid var(--accent1);
+    border-top:none;
+    margin:-.65rem auto;
+    padding:40px 20px 30px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @include tablet(){
+      margin:-.5rem auto;
+    }
+  }
+
+  i {
+    font-size: 50px;
+    padding: 0px 20px;
+    @include tablet() {
+      padding: 0px 16px;
+      font-size: 40px;
+    }
+  }
+}
+
+
+// icons
+
+.icon_wrapper {
+  position:relative;
+  padding: 10px 0px;
+  @include tablet() {
+    padding: 8px 0px;
+    font-size: 40px;
+  }
+}
+.icon {
+  opacity: 1;
+  -webkit-transition: -webkit-transform opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s;
+}
+.icon_active {
+  opacity: 0.1;
+  -webkit-transition: -webkit-transform opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.icon_text {
+  font-family:var(--body-font);
+  font-size:1rem;
+  pointer-events: none;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity:0;
+  &__active {
+    opacity:1;
+    -webkit-transition: -webkit-transform opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+}

@@ -1,0 +1,32 @@
+.secondary_nav {
+	padding:.5em 0;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap:10px;
+	i {
+		color:var(--accent1);
+		font-size:1.4rem;
+		&:hover {
+			color:var(--text);
+			cursor:pointer;
+		}
+	}
+	p {
+		opacity:0;
+		font-size:.8rem;
+		padding:0px;
+		-webkit-animation: blink 1s 3 step-end;
+		animation: blink 1s 3 step-end;
+		color:var(--accent1);
+	}
+	
+	@keyframes blink {
+		0% {opacity:0;}
+		50% {opacity:1;}
+	}
+	@-webkit-keyframes blink {
+		0% {opacity:0;}
+		50% {opacity:1;}
+	}
+}

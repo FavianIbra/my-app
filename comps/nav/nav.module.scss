@@ -1,0 +1,66 @@
+@import "styles/mixins";
+
+.nav ul {
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	justify-content:center;
+	align-items: flex-start;
+	text-align: center;
+	gap:.8rem;
+	@include tablet() {
+		gap:.5rem;
+	}
+	.activeLi {
+		border-bottom: none;
+		background:var(--bkg1);
+		background-image: var(--bkgimg2);
+	}
+	//use psudeo element to hide page-container border (instead of using a background color)
+	// .activeLi:after { 
+	// 	content:'';
+	// 	display:block;
+	// 	position: relative;
+	// 	top:.1rem;
+	// 	background:var(--bkg1);
+	// 	width:100%;
+	// 	height:1rem;
+	// }
+	li {
+		border: 1px solid var(--accent1);
+	}
+	a {
+		display:flex;
+		flex-direction:column;
+		gap:10px;
+		text-decoration: none;
+		padding:1.5rem;
+		opacity:var(--opacity);
+		&:hover{
+			opacity:1; 
+		}
+		@include tablet() {
+		padding:3vw;
+		}
+	}
+	h3{
+		letter-spacing: 1px;
+		font-size:1.2rem;
+		@include tablet() {
+			font-size:3vw;
+		}
+	}
+	i {
+		font-size:2rem;
+		@include tablet() {
+			font-size:1.4rem;
+		}
+	}
+	.active {
+		opacity:1!important;
+		margin-bottom:1rem;
+		@include tablet() {
+			margin-bottom:.7rem;
+		}
+	}
+	
+}

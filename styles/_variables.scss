@@ -1,0 +1,22 @@
+:root {
+	--siteW:700px;
+	--header-font: 'United';
+	--subtitle-font: 'Orbitron';
+	--body-font: 'Source';
+	--text: hsl(0, 0%, 90%);
+	--accent1: hsl(0, 0%, 40%);
+	--bkg1: hsl(0, 0%, 8%);
+	--bkg2: hsl(0, 0%, 8%);
+	--bkgimg: none;
+	--opacity: .5;
+}
+
+.crt {
+	--text: #4af526;
+	--accent1: #4af526;
+	--bkg1: hsl(0, 0%, 0%);
+	--bkg2: transparent;
+	--bkgimg: radial-gradient(rgba(44, 56, 44, 0.267), black 120%);
+	--bkgimg2: linear-gradient(50deg, rgba(44, 56, 44, 0.267), rgba(44, 56, 44, 0.25) 10%);
+	--opacity: 1;
+}

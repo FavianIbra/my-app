@@ -1,0 +1,23 @@
+@import "styles/mixins";
+
+.footer {
+	margin:20px auto;
+	display:flex;
+	gap:10px;
+	justify-content: center;
+	i {
+		color:var(--accent1);
+		font-size:2.5rem;
+		margin:10px;
+		text-decoration: none;
+		&:hover {
+			color:var(--text);
+		}
+		@include mobile(){
+			font-size:2rem;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+}

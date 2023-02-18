@@ -1,0 +1,42 @@
+@import "styles/mixins";
+
+.hero {
+  margin-bottom: 3.5%;
+  div {
+    border: 1px solid var(--accent1);
+    border-bottom: none;
+  }
+  h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 5% 0px;
+    font-size: min(11vw, 5rem);
+  }
+  h2 {
+    display: flex;
+    margin: 0px;
+    margin-top: -0.6rem;
+    font-size: min(3vw, 1.2rem);
+    letter-spacing: 5px;
+    @include tablet(){
+      margin-top:-1.5%;
+    }
+    &::before {
+      content: "";
+      flex: 1 1;
+      border-top: 1px solid var(--accent1);
+      margin: auto;
+      margin-right: 15px;
+    }
+    &::after {
+      content: "";
+      flex: 1 1;
+      border-top: 1px solid var(--accent1);
+      margin: auto;
+      margin-left: 15px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
