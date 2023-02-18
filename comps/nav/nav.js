@@ -17,7 +17,7 @@ export default function Navbar() {
 
 function NavItem(props) {
   
-  const router = useRouter(); // using router to mimick react's NavLink ('active' class link state for styling) 
+  const router = useRouter(); 
 
   const activeLi = styles.activeLi;
   const active = styles.active;
