@@ -2,21 +2,12 @@ import React, { Component } from 'react';
 import Projects from '../comps/project/project';
 import Link from 'next/link'
 
-import AK from '../public/svg/ak.svg';
-// import Tipper from '../public/svg/tipper.svg';
-import PLPC from '../public/svg/plpc.svg';
-// import Hal from '../public/svg/hal9000m.svg';
-
-// import IP from '../public/svg/ip-tracker.svg';
-
-
 export default class ProjectData extends Component {
   state = {
     projects: [
       {
         title: 'Personal Project',
         icons: [
-            // <i className='personal' key="1"></i>
         ],
         description: 'My portfolio site, showcasing my work and personal projects',
         buttons: [
@@ -29,7 +20,6 @@ export default class ProjectData extends Component {
       {
         title: 'Tefa Project',
         icons: [
-            // <i className='personal' key="1"></i>
         ],
         description: 'My portfolio site, showcasing my team work in class Tefa',
         buttons: [
@@ -41,7 +31,6 @@ export default class ProjectData extends Component {
       {
         title: 'Class Project',
         icons: [
-            // <i className='personal' key="1"></i>
         ],
         description: 'My portfolio site, showcasing my work in XI class',
         buttons: [
@@ -50,9 +39,6 @@ export default class ProjectData extends Component {
           </Link>
           ],
       }, 
-      
-      
-
     ]
   }
   render() {
