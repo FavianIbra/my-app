@@ -12,7 +12,6 @@ export default class Projects extends Component {
 						<div className={styles.project} >
 							<div onClick={toggle} className={styles.link}>
 								<div className={styles.summary}>
-									{project.logo}
 									<div className={styles.title}>
 										<h4>
 											{project.title}
@@ -25,9 +24,6 @@ export default class Projects extends Component {
 							</div>
 							{on &&
 								<div className={styles.info}>
-									<div className={styles.icons}>
-										{project.icons}
-									</div>
 									<p>
 										{project.description}
 									</p>
@@ -41,9 +37,6 @@ export default class Projects extends Component {
 				/> //end Toggle
 			)
 		});
-
-
-
 		return (
 			<div className={styles.list}>
 				{projectList}
